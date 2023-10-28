@@ -19,8 +19,9 @@ class MyTextFormField extends StatelessWidget {
       decoration: InputDecoration(
         labelText: label,
         labelStyle: const TextStyle(
-          fontWeight: FontWeight.w600,
+          fontWeight: FontWeight.w300,
         ),
+        border: InputBorder.none
       ),
     );
   }
