@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:todo_app/ui/screens/home_sc/modal_bottom_sheet.dart';
+import 'package:todo_app/ui/screens/settings_sc/settings_sc.dart';
+import 'package:todo_app/ui/screens/todos_sc/todos_screen.dart';
 import 'package:todo_app/utilities/app_colors.dart';
 import 'package:todo_app/widgets/text_form_field.dart';
 
@@ -20,6 +22,7 @@ class _HomeScreenState extends State<HomeScreen> {
       bottomNavigationBar: buildBottomAppBar(),
       floatingActionButton: buildFloatingActionButton(),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+      body: currentIndex == 0 ? const TodosList() : const SettingsScreen(),
     );
   }
 
